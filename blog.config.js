@@ -10,7 +10,7 @@ const BLOG = {
   SINCE: 2021, // e.g if leave this empty, current year will be used.
   APPEARANCE: 'light', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
 
-  AUTHOR: '', // 作者
+  AUTHOR: 'rdhc', // 作者
   BIO: '', // 作者简介
   LINK: '', // 网站地址
   KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
@@ -23,7 +23,7 @@ const BLOG = {
   CONTACT_LINKEDIN: '', // 你的linkedIn 首页
 
   // 自定义字体示例： 请先将 CUSTOM_FONT 改为 true， 并将 CUSTOM_FONT_URL 改为你的字体CSS地址，同时在 CUSTOM_FONT_SANS 与 CUSTOM_FONT_SERIF 中指定你的 fontfamily
-  CUSTOM_FONT: true, // 是否使用自定义字体
+  CUSTOM_FONT: false, // 是否使用自定义字体
   CUSTOM_FONT_URL: ['https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css'], // 自定义字体的CSS
   CUSTOM_FONT_SANS: ['LXGW WenKai'], // 自定义无衬线字体
   CUSTOM_FONT_SERIF: ['LXGW WenKai'], // 自定义衬线字体
@@ -139,7 +139,7 @@ const BLOG = {
   AVATAR: '/avatar.png', // 作者头像，被notion中的ICON覆盖。若无ICON则取public目录下的avatar.png
   TITLE: process.env.NEXT_PUBLIC_TITLE || 'NotionNext BLOG', // 站点标题 ，被notion中的页面标题覆盖
   HOME_BANNER_IMAGE: './bg_image.jpg', // 首页背景大图, 会被notion中的封面图覆盖，若无封面图则会使用代码中的 /public/bg_image.jpg 文件
-  DESCRIPTION: process.env.NEXT_PUBLIC_DESCRIPTION || '这是一个由NotionNext生成的站点', // 站点描述，被notion中的页面描述覆盖
+  DESCRIPTION: process.env.NEXT_PUBLIC_DESCRIPTION || '', // 站点描述，被notion中的页面描述覆盖
 
   // 开发相关
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
